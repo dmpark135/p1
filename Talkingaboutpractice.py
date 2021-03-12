@@ -1,3 +1,4 @@
->>> age_0 = 22
->>> age_1 = 18
->>> age_0 >= 21 or age_1 >= 21
+foods = ('a','b','c','d','e')
+foods = ('a','b','c','u','r')
+for f in foods:
+    print(f) 
