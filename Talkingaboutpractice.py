@@ -1,7 +1,17 @@
-requested_toppings = ['mushrooms', 'green peppers', 'extra cheese']
-for requested_topping in requested_toppings:
-    if requested_topping == 'green peppers':
-        print("Sorry, we are out of green peppers right now.")
-    else:
-        print(f"Adding {requested_topping}.")
-print("\nFinished making your pizza!")
+Jane = {'name': 'Lee','fav': 'hiking'}
+monica = {'name':'Tse','fav':'food'}
+page = {'name' : 'brusky','fav':'netflix'}
+
+people = [Jane, monica]
+
+for x in people:
+    print(x)        
+    
+p1 = {'dog':'Dave'}
+p2= {'bird':'Anne'}
+p3 = {'cat':'Hatmaker'}
+
+pets =[p1,p2,p3]
+
+for x in pets:
+    print(x)
