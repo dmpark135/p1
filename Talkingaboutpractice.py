@@ -1,27 +1,20 @@
-Jane = {'name': 'Lee','fav': 'hiking'}
-monica = {'name':'Tse','fav':'food'}
-page = {'name' : 'brusky','fav':'netflix'}
-
-people = [Jane, monica]
-
-for x in people:
-    print(x)        
+cities = {
+        'seoul':{'country':'korea',
+                 'population':'50m',
+                 'one fact': 'hot chicks'},
+         'london':{'country':'UK',
+                   'population':'30m',
+                   'one fact':'likes fish n chips'},
+            }
+for city, facts in cities.items():
+    print(f'\nCities: {city.title()}')
+    x = facts['country'] 
+    s= facts['one fact']
+    country = x+" "+s
+    population = facts['population']
+    one_fact = facts['one fact']
     
-p1 = {'dog':'Dave'}
-p2= {'bird':'Anne'}
-p3 = {'cat':'Hatmaker'}
-
-pets =[p1,p2,p3]
-
-for x in pets:
-    print(x)
-
-favorite_places = {
-        'ace':['seoul','usa','hk'],
-        'brian':['vietnam','africa','london'],
-        'dan':['china','oc','la']
-        }
-for key,value in favorite_places.items():
-    print(f'This dude {key.title()}, loves getting chicks from:')
-    for y in value:
-        print(f'\t{y.title()}')
+    print(f'\tCountry: {country.title()}' )
+    print(f'\tPopulation: {population.title()}')
+    print(f'\tOne Fact: {one_fact.title()}')
+    
