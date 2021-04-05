@@ -1,20 +1,31 @@
-cities = {
-        'seoul':{'country':'korea',
-                 'population':'50m',
-                 'one fact': 'hot chicks'},
-         'london':{'country':'UK',
-                   'population':'30m',
-                   'one fact':'likes fish n chips'},
-            }
-for city, facts in cities.items():
-    print(f'\nCities: {city.title()}')
-    x = facts['country'] 
-    s= facts['one fact']
-    country = x+" "+s
-    population = facts['population']
-    one_fact = facts['one fact']
+prompt = '\nTicket prices \n\t 0-3= $0 \n\t3-12 = $10 \n\t12+ =$15\n\t quit '
+what = True
+while what:
+    x = input(prompt)
     
-    print(f'\tCountry: {country.title()}' )
-    print(f'\tPopulation: {population.title()}')
-    print(f'\tOne Fact: {one_fact.title()}')
     
+    if x =='quit':
+        
+        what = False 
+    
+    elif 0< int(x) < 3:
+        print('$0')
+    
+    elif 3<int(x)<12:
+        print('$10')
+    else: 
+        12<int(x)<200
+        print('$15')
+   
+    
+        
+          
+  
+        
+        
+
+    
+        
+        
+        
+        
