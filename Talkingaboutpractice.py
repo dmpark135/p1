@@ -1,27 +1,21 @@
-prompt = '\nTicket prices \n\t 0-3= $0 \n\t3-12 = $10 \n\t12+ =$15\n\t quit '
-what = True
-while what:
-    x = input(prompt)
+dictx= {}
+
+nums = True
+while nums:
+    name = input('whats your name boy?')
+    response= input('where yo headed')
     
+    dictx[name] = response
     
-    if x =='quit':
+    repeat= input('would you like to let the next person respond? (yes/no)')
+    if repeat == 'no':
+        nums = False
         
-        what = False 
+print('\n-- Poll Results--')
+for name,response in dictx.items():
+    print(f'{name} is my name, and I\'m headed to {response}')
     
-    elif 0< int(x) < 3:
-        print('$0')
-    
-    elif 3<int(x)<12:
-        print('$10')
-    else: 
-        12<int(x)<200
-        print('$15')
-   
-    
-        
-          
-  
-        
+
         
 
     
