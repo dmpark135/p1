@@ -7,6 +7,8 @@ class Restaurant:
         print(f'name of restaurant is {self.restaurant_name}.')
         print(f'dish specialty is {self.cuisine_type}.')
         
+    def set_number_served
+        
         
     def open_restaurant(self):
         print(f'{self.restaurant_name} is open')
